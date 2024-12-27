@@ -90,6 +90,17 @@ public class Abonne {
 
     }
 
+    //methode pour calucler la consommation d'un abonne
+    boolean connsommationAbonne(int nombreDeSeconde , double prixUneMinute){
+        double consommation = (nombreDeSeconde / 60.0) * prixUneMinute;
+        if(solde>=consommation) {
+            solde = solde-consommation;
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     //methode pour afficher le solde d'un abonne
     void afficherSolde(){
         System.out.println("Le solde actuel dle abonne est : " + this.solde);

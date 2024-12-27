@@ -17,6 +17,12 @@ public class Main {
         abonne1.rehchargerAbonne(5000);
         abonne1.afficherSolde();
 
+        //tester la methode consommation d'un abonne
+        System.out.println("La consomation de l'abonne est : \n");
+        boolean resultat1 = abonne1.connsommationAbonne(120,500);
+        System.out.println("La consomation de l'abonne est résussite : \n"+resultat1);
+        abonne1.afficherSolde();
+
 
 
     }
