@@ -8,6 +8,8 @@ public class Operateur {
     public Operateur() {
     }
 
+
+
     //generation du constructeur parametre
     public Operateur(String nom, Abonne[] abonnes) {
         this.nom = nom;
@@ -30,6 +32,20 @@ public class Operateur {
     public void setAbonnes(Abonne[] abonnes) {
         this.abonnes = abonnes;
     }
+
+    //une methode qui permet de chercher un abonne dans un tableau d'operateur
+    public int searchAbonne(Abonne abonne ){
+        int index = -1;
+        for (int i = 0; i < abonnes.length; i++) {
+            if(abonnes[i]==abonne){
+                return index;
+            }
+        }
+        return index;
+    }
+
+    // méthode qui permet d'ajouter un Abonne a un operteur
+
 
 
 }

@@ -23,6 +23,26 @@ public class Main {
         System.out.println("La consomation de l'abonne est résussite : \n"+resultat1);
         abonne1.afficherSolde();
 
+        //création d'une instance de la classe Abonne
+        Operateur operateur = new Operateur();
+        operateur.setAbonnes(new Abonne[50]);
+
+        //Ajout des abonnes a l'operateur
+        operateur.getAbonnes()[0] = abonne1;
+
+
+        //tester la méthode searchAbonne
+        int index = operateur.searchAbonne(abonne1);
+
+        if(index != -1){
+            System.out.println("L'abonne a été trouvé a l'index : " + index);
+        }else{
+            System.out.println("L'abonne n'a pas été touvé :");
+        }
+
+
+
+
 
 
     }
