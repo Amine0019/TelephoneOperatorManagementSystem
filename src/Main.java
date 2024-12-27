@@ -4,9 +4,13 @@ public class Main {
         //création de l'instance de la classe Abonne
         Abonne abonne1 = new Abonne("Larbi","Amine",50917433,5700);
 
-        //tester la methode saisir compte
+        //tester la methode saisir Abonne
         System.out.println("Veuillez saisir les informations de l'abonne :\n");
         abonne1.saisirAbonne();
+
+        //tester la methode afficher Abonne
+        System.out.println("Les informations de l'abonne sont : \n");
+        abonne1.afficherAbonne();
 
 
 

@@ -74,5 +74,13 @@ public class Abonne {
 
     }
 
+    //méthode pour afficher les informations d'un Abonne
+    void afficherAbonne() {
+        System.out.println("Nom du abonne : " + this.nom);
+        System.out.println("Prenom du abonne : " + this.prenom);
+        System.out.println("Numero du abonne : " + this.numero);
+        System.out.println("Solde du abonne : " + this.solde);
+    }
+
 
 }
