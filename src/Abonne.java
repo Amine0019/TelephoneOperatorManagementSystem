@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Abonne {
     //Declaration des attributs de la classe
     private String nom;
@@ -50,6 +52,26 @@ public class Abonne {
 
     public void setSolde(double solde) {
         this.solde = solde;
+    }
+
+    //méthode qui nous permet de saisir un Abonne
+    void saisirAbonne() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Veuillez saisir le nom du abonne : \n");
+        this.nom = sc.nextLine();
+
+        System.out.println("Veuillez saisir le prenom du abonne : \n");
+        this.prenom = sc.nextLine();
+
+        System.out.println("Veuillez saisir numero du abonne : \n");
+        this.numero = sc.nextInt();
+        sc.nextLine();
+
+        System.out.println("Veuillez saisir le solde du abonne : \n");
+        this.solde = sc.nextDouble();
+        sc.nextLine();
+
     }
 
 
