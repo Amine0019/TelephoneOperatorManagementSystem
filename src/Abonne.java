@@ -82,5 +82,18 @@ public class Abonne {
         System.out.println("Solde du abonne : " + this.solde);
     }
 
+    //methode pour recharger un abonne
+    void rehchargerAbonne(double rehcharge) {
+        if(rehcharge > 0) {
+            solde = solde+rehcharge;
+        }
+
+    }
+
+    //methode pour afficher le solde d'un abonne
+    void afficherSolde(){
+        System.out.println("Le solde actuel dle abonne est : " + this.solde);
+    }
+
 
 }

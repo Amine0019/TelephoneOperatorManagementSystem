@@ -12,6 +12,11 @@ public class Main {
         System.out.println("Les informations de l'abonne sont : \n");
         abonne1.afficherAbonne();
 
+        //tester la methode qui recharge Un Abonne
+        System.out.println("Le solde de l'abonne aprés recharge est : \n");
+        abonne1.rehchargerAbonne(5000);
+        abonne1.afficherSolde();
+
 
 
     }
