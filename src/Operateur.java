@@ -33,16 +33,19 @@ public class Operateur {
         this.abonnes = abonnes;
     }
 
-    //une methode qui permet de chercher un abonne dans un tableau d'operateur
-    public int searchAbonne(Abonne abonne ){
-        int index = -1;
+
+
+    public int searchAbonne(Abonne abonne) {
         for (int i = 0; i < abonnes.length; i++) {
-            if(abonnes[i]==abonne){
-                return index;
+            if (abonnes[i] != null && abonnes[i].equals(abonne)) {
+                return i; // Retourne l'index si l'abonné est trouvé
             }
         }
-        return index;
+        return -1; // Retourne -1 si l'abonné n'est pas trouvé
     }
+
+
+
 
     // méthode qui permet d'ajouter un Abonne a un operteur
 

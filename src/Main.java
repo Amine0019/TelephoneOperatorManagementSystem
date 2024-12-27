@@ -3,6 +3,7 @@ public class Main {
 
         //création de l'instance de la classe Abonne
         Abonne abonne1 = new Abonne("Larbi","Amine",50917433,5700);
+        Abonne abonne2 = new Abonne("Cherif ","Skander",53689072,2000);
 
         //tester la methode saisir Abonne
         System.out.println("Veuillez saisir les informations de l'abonne :\n");
@@ -29,7 +30,7 @@ public class Main {
 
         //Ajout des abonnes a l'operateur
         operateur.getAbonnes()[0] = abonne1;
-
+        operateur.getAbonnes()[1] = abonne2;
 
         //tester la méthode searchAbonne
         int index = operateur.searchAbonne(abonne1);
