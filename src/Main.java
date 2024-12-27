@@ -41,6 +41,9 @@ public class Main {
             System.out.println("L'abonne n'a pas été touvé :");
         }
 
+        //tester la méthode afficher Operateur :
+        operateur.displayOperateur();
+
 
 
 
