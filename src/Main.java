@@ -4,6 +4,7 @@ public class Main {
         //création de l'instance de la classe Abonne
         Abonne abonne1 = new Abonne("Larbi","Amine",50917433,5700);
         Abonne abonne2 = new Abonne("Cherif ","Skander",53689072,2000);
+        Abonne abonneSup = new Abonne("Elyes","Frigui",93656019,3000);
 
         //tester la methode saisir Abonne
         System.out.println("Veuillez saisir les informations de l'abonne :\n");
@@ -40,6 +41,9 @@ public class Main {
         }else{
             System.out.println("L'abonne n'a pas été touvé :");
         }
+        // tester l'ajout d'un compte supplementaire
+        operateur.addAbonne(abonneSup);
+
 
         //tester la méthode afficher Operateur :
         operateur.displayOperateur();
