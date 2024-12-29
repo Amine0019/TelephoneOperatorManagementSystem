@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Operateur {
 
     //Déclaration des attributs de la classe
@@ -66,6 +68,12 @@ public class Operateur {
                 System.out.println("Nom Abonnes :"+abonnes[i].getNom()+"Prenom Aonnes: "+abonnes[i].getPrenom()+"Numero Abonnes :"+abonnes[i].getNumero()+"Solde Abonnee :"+abonnes[i].getSolde());
             }
         }
+    }
+
+    //methode to String
+    @Override
+    public String toString() {
+        return "nom : " + nom + "\nabonnes: " + Arrays.toString(abonnes);
     }
 
 
