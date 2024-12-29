@@ -106,5 +106,11 @@ public class Abonne {
         System.out.println("Le solde actuel dle abonne est : " + this.solde);
     }
 
+    //methode to String
 
+
+    @Override
+    public String toString() {
+        return "nom : " + this.nom + " prenom : " + this.prenom + " numero : " + this.numero + " solde : " + this.solde;
+    }
 }
