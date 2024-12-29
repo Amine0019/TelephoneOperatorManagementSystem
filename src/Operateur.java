@@ -61,6 +61,28 @@ public class Operateur {
         System.out.println("L'operateur est plein impossibile d'ajouter un abonne");
     }
 
+    //méthode qui permet de supprimer un Abonne d'un tableau d'operateur
+    public void removeAbonne(Abonne abonne) {
+        boolean trouve = false;
+        for (int i = 0; i < abonnes.length; i++) {
+            if (abonnes[i] != null && abonnes[i].equals(abonne)) {
+                abonnes[i] = null; // Supprime l'abonné
+                trouve = true;
+                // Réorganiser le tableau pour éviter des trous
+                for (int j = i; j < abonnes.length - 1; j++) {
+                    abonnes[j] = abonnes[j + 1];
+                }
+                abonnes[abonnes.length - 1] = null; // Dernière case mise à null
+                System.out.println("L'abonné a été supprimé avec succès.");
+                return; // Sortir de la méthode après suppression
+            }
+        }
+        if (!trouve) {
+            System.out.println("Abonné introuvable.");
+        }
+    }
+
+
     //méthode pour afficher tous les Abonnes d'un operateur
     void displayOperateur() {
         for (int i = 0; i < abonnes.length; i++) {

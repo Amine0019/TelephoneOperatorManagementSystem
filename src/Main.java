@@ -50,6 +50,24 @@ public class Main {
         operateur.displayOperateur();
 
 
+        //Tester la suppression d'un abonne
+        System.out.println("\n: Test de la suppression d'un abonne :");
+        System.out.println("\nLa liste des abonne avant suppression : ");
+        operateur.displayOperateur();
+
+        //suppression d'un operateur existant :
+        operateur.removeAbonne(abonne1);
+
+        // Afficher les abonnées apres suppression :
+        System.out.println("\n: maj de la liste aprés suppression : :");
+        operateur.displayOperateur();
+
+        //Tester ka suppression d'un abonne inexistant :
+        System.out.println("\n : Suppression d'un abonne inexsistant  :");
+        Abonne abonneInexsistant = new Abonne("Test","Test",95062531,2000);
+        operateur.removeAbonne(abonneInexsistant);
+
+
 
 
 
